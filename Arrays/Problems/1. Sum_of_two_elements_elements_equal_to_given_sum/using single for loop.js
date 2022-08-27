@@ -1,4 +1,4 @@
-function usingTwoPointer(arr, target){
+function usingSingleForLoop(arr, target){
     arr.sort((a,b) => {
         return a - b
     })
