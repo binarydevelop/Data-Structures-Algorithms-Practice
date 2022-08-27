@@ -16,3 +16,9 @@ function usingTwoPointer(arr, target){
     }
     return [-1, -1]
 }
+
+/* 
+The time complexity will depend on what time complexity we use 
+Merge sort or heap sort O(n logn)
+Heap sort O(n^2)
+*/
