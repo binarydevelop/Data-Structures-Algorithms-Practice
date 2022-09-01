@@ -2,7 +2,7 @@ function usingSingleForLoop(arr, target){
     arr.sort((a,b) => {
         return a - b
     })
-    for(let i = 0, j = arr.length-1 ; i< arr.length -1, j>0 ; ){
+    for(let i = 0, j = arr.length-1 ; i< arr.length -1, j > 0 ; ){
         if(arr[i] + arr[j] == target){
             console.log(arr[i], arr[j])
             return [i,j]

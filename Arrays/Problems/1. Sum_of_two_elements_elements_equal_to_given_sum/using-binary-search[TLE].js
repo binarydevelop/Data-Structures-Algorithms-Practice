@@ -4,36 +4,31 @@ Determine whether or not there exist two elements in Arr whose sum is exactly X.
 */
 function binarySearch(arr, key, start, end){
     while(start <= end){
-        let mid = (start + (end -start)/2)
-        if(arr[mid]== key){
-            return mid;
-        }
-        if(arr[mid] > key){
-            end = mid - 1;
-        }
-        if(arr[mid] < key){
-            start = mid + 1;
-        }
+      let mid = Math.floor(start + (end -start)/2);
+      if(arr[mid] == key){ 
+        return mid 
+      }
+      if(arr[mid] > key){
+        end = mid - 1;
+      }
+      if(arr[mid] < key){
+        start = mid + 1;
+      }
     }
     return -1;
-}
-
-function usingBinarySearch(arr, sum){
-    arr.sort((a , b) => {
-        return a - b;
-    })
-    let i = 0; 
-    while(i <= arr.length -1){
-        let key =0;
-        if(sum < arr[i] ){
-            key = x - arr[i]
-            if(this.binarySearch(arr, key, i +1, arr.length-1)){
-                return true
-            }
+  }
+  
+  function usingBinarySearch(arr, sum){
+    for(let i = 0; i< arr.length -1 ; i++){
+      if(arr[i] < sum){
+        let key = sum - arr[i];
+        let sumIndex = binarySearch(arr, key, i + 1, arr.length -1 )
+        if(sumIndex > 0){
+          return sumIndex
         }
-        i++;
+      }
     }
-return false
-}
-
-console.log(usingBinarySearch([1, 4, 45, 6, 10, -8], 16));
+    return -1;
+  }
+  
+  console.log(usingBinarySearch([1, 4, 45, 6, 10, -8], 16));
