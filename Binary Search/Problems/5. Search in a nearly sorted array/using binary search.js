@@ -15,10 +15,10 @@ function searchNearlySortedArray(arr, key ){
       if(arr[mid] == key ) {
         return [mid, arr[mid]];
       }
-      if(arr[mid - 1] == key ) {
+      if(mid > 0 && arr[mid - 1] == key ) {
         return [mid - 1, arr[mid - 1]];
       }
-      if( arr[mid+1] == key ) {
+      if(mid < arr.length - 1 && arr[mid+1] == key ) {
         return [mid + 1, arr[mid + 1]];
       }
       if(arr[mid] < key){
