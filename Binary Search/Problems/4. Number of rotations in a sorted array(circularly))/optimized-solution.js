@@ -7,12 +7,10 @@ function numberOfRotations(arr){
     }
     while(start < end){ 
       let mid  = Math.floor(start + (end - start)/2);
-            // If the middle element is smaller than its previous element, then it is the minimum element
             if(mid > 0 && arr[mid] < arr[mid-1]) {
                 return mid;
             }
 
-            // If the middle is greater than its next element, then the next element is the minimum element
             if(mid < arr.length -1 && arr[mid] > arr[mid+1]) { 
                 return mid+1;
             }

@@ -32,3 +32,10 @@ function searchNearlySortedArray(arr, key ){
   }
   
   console.log(searchNearlySortedArray([10, 3, 40, 20, 50, 80, 70], 20));
+
+
+  /* 
+  The idea is to compare the key with middle 3 elements, if present then return the index.
+   If not present, then compare the key with middle element to decide whether to go in left half or right half.
+   Comparing with middle element is enough as all the elements after mid+2 must be greater than element mid and all elements before mid-2 must be smaller than mid element.
+  */
