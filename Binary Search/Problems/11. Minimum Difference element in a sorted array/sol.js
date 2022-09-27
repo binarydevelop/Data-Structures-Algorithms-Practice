@@ -1,4 +1,4 @@
-function indexOfFirstOneInABinarySortedArray(arr, key){
+function minimumDifferenceElementInAsortedArray(arr, key){
     let start = 0 ;
     let end = arr.length - 1;
     
@@ -22,4 +22,4 @@ function indexOfFirstOneInABinarySortedArray(arr, key){
     }
     
     let arr = [2, 5, 10, 12, 15];
-    console.log(indexOfFirstOneInABinarySortedArray(arr, 5));
+    console.log(minimumDifferenceElementInAsortedArray(arr, 5));
