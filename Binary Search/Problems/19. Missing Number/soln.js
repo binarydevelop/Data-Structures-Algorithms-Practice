@@ -1,6 +1,7 @@
 /**
  * @param {number[]} nums
- * @return {number}
+ * @return {number} 
+ * @Link https://leetcode.com/problems/missing-number/ [268]
  */
  var missingNumber = function(nums) {
     nums.sort((a, b) => a - b)
