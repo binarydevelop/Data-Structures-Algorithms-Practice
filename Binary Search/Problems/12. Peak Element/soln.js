@@ -19,7 +19,6 @@ function solution(arr){
       }else {
         end = mid -1;
       }
-        
     }
   }
   

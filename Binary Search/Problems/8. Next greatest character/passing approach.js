@@ -1,16 +1,25 @@
-var nextGreatestLetter = function(letters, target) {
-    let left = 0; 
-    let right = letters.length;
-    while (left < right) {
-        let mid = (left + right) >> 1;
-        if (letters[mid] > target) {
-            right = mid;
-        } else {
-            left = mid + 1;
-        }
+/**
+ * @param {character[]} letters
+ * @param {character} target
+ * @return {character}
+ */
+ var nextGreatestLetter = function(letters, target) {
+    let start = 0 ;
+    let end  = letters.length - 1;
+      if(target >= letters[end]){
+          return letters[start]
+      }
+    while(start <= end){
+      let mid = Math.floor(start + (end - start)/2);
+  
+      if(letters[mid] > target){
+        end = mid - 1
+      } else {
+        start = mid + 1;
+      }
     }
-    return letters[left % letters.length];
-};
+    return letters[start];
+  };
 
 /* https://stackoverflow.com/questions/73649231/next-greatest-alphabet-in-an-array-using-binary-search-algorithm?noredirect=1#comment130056469_73649231 */
 

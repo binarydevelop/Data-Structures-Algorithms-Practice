@@ -23,3 +23,12 @@ function minimumDifferenceElementInAsortedArray(arr, key){
     
     let arr = [2, 5, 10, 12, 15];
     console.log(minimumDifferenceElementInAsortedArray(arr, 5));
+
+
+    /*    
+           At the end of the while loop, 
+           a[start] is the ceiling of target (Smallest number greater than target), and 
+           a[end] is the floor of target (Largest number smaller than target).
+           
+           Return the element whose difference with target is smaller
+          */
