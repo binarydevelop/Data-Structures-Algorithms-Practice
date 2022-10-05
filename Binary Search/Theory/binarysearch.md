@@ -22,5 +22,7 @@ Google kickstart A Q-3 2020
 - Aditya Verma Youtube Playlist 
 - [Leetcode](https://leetcode.com/tag/binary-search/)
 
+Leetcode  -  1011, 2187 , 2064 , 
+
 Whenever there is a question to search a value and if the value does not exist the closest value will be end. 
 In any case start denotes the floor and end denotes the ceil of an element in a binary search.

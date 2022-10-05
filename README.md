@@ -2,7 +2,11 @@
 Repository for implemmentation and practicing DS &amp; Algo Problems. 
 
 ## Data Structures
-Array  
+Array    
+  [Leetcode_Array_Problems](https://leetcode.com/tag/Array/)
 
-## Algorithm
-Binary Search 
+
+## Algorithms & Techniques
+
+Binary Search  
+  [Leetcode_Binary_Search_Problems](https://leetcode.com/tag/binary-search/)
