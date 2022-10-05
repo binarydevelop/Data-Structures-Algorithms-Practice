@@ -21,3 +21,12 @@ function searchIn2DSortedMatrix(arr, key){
                      [ 32, 33, 39, 50 ]
                     ];
    console.log(searchIn2DSortedMatrix(mat,99));
+
+
+   /* 
+   This question has two variations one on GFG and another on leetcode the above solution works for GFG where matrix
+   is sorted row wise as well as column wise.
+
+   While the leetcode question says the first element in next row will be always greater than the last element in previous 
+   row.    
+   */
