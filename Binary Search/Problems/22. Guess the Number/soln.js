@@ -7,3 +7,5 @@ var guessNumber = function(n) {
     }
     return left
 };
+
+/* https://leetcode.com/problems/guess-number-higher-or-lower/ */
