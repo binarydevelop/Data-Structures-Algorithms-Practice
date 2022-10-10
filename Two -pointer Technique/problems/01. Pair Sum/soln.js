@@ -16,3 +16,5 @@ function pairSum(arr, target){
             return results
   }
   console.log(pairSum([1,2,3,4,5],9))
+
+  /* https://leetcode.com/problems/two-sum/ */
