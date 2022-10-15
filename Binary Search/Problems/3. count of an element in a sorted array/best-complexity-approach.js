@@ -1,41 +1,96 @@
-function countOfAnElement(arr, key){
-    let start = 0;
-    let end  = arr.length -1 ;
-    let firstOccurence = -1;
-    let lastOccurence = -1; 
-    while(start <= end){
-        let mid = Math.floor(start + (end - start ) / 2);
-        if(arr[mid] == key){
-            firstOccurence = mid;
-            lastOccurence = mid;
-            end = mid - 1;
-        }
-        if(arr[mid] > key){
-            end = mid -1;
-        }
-        if(arr[mid] < key){
-            start = mid+1
-        }
-    }
+//{ Driver Code Starts
+//Initial Template for javascript
 
-    start = 0;
-    end  = arr.length -1 ;
-    while(start <= end){
-        let mid = Math.floor(start + (end - start ) / 2);
-        if(arr[mid] == key){
-            lastOccurence = mid;
-            start = mid + 1;
-        }
-        if(arr[mid] > key){
-            end = mid -1;
-        }
-        if(arr[mid] < key){
-            start = mid+1
-        }
-    }
-    return (lastOccurence - firstOccurence ) + 1
+'use strict';
+
+process.stdin.resume();
+process.stdin.setEncoding('utf-8');
+
+let inputString = '';
+let currentLine = 0;
+
+process.stdin.on('data', inputStdin => {
+    inputString += inputStdin;
+});
+
+process.stdin.on('end', _ => {
+    inputString = inputString.trim().split('\n').map(string => {
+        return string.trim();
+    });
+    
+    main();    
+});
+
+function readLine() {
+    return inputString[currentLine++];
 }
 
-let arr = [1, 1, 2, 2, 2, 2, 3];
-let key =3;
-console.log(countOfAnElement(arr,key));
+function main() {
+    let t = parseInt(readLine());
+    let i = 0;
+    for(;i<t;i++)
+    {
+        let [n,x] = readLine().trim().split(" ").map((x) => parseInt(x));
+        let arr = readLine().trim().split(" ").map((x) => parseInt(x));
+        let obj = new Solution();
+        let res=obj.count(arr,n,x);
+        console.log(res);
+    
+    }
+}
+// } Driver Code Ends
+
+
+//User function Template for javascript
+
+/**
+ * @param {number[]} arr
+ * @param {number} n
+ * @param {number} x
+ * @return {number}
+*/
+
+class Solution {
+
+    count(arr,n,key){
+  let start = 0;
+    let end = arr.length -1;
+    let firstoccurence = -1;
+    let lastoccurence = -1;
+
+    
+    while(start <= end){
+      let mid = Math.floor(start + (end - start)/2);
+      if(arr[mid] == key){
+        firstoccurence = mid ;
+        end = mid - 1;
+      }
+      if(arr[mid] < key){
+        start = mid + 1;
+      } else {
+        end = mid -1;
+      }
+    }
+
+    // find lastoccurence
+    start = 0;
+    end = arr.length -1; 
+    while(start <= end){
+      let mid = Math.floor(start + (end - start)/2);
+      if(arr[mid] == key){
+        lastoccurence = mid;
+        start = mid ;
+      }
+      if(arr[mid] > key){
+        end = mid - 1;
+      } else {
+        start = mid + 1;
+      }
+    }
+    if(lastoccurence==-1 && firstoccurence==-1){
+        return 0
+      } else {
+          return lastoccurence-firstoccurence+1
+        }
+    }
+}
