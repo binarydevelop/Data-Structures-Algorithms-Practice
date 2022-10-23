@@ -27,3 +27,5 @@ function intersectionOfThreeSortedArray(nums1, nums2, nums3){
   let nums3 = [0,1,3,8,9]
   
   console.log(intersectionOfThreeSortedArray(nums1, nums2, nums3))
+
+  /* https://leetcode.ca/all/1213.html */
