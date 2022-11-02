@@ -1,3 +1,5 @@
+/* We try to find candidate if mid does not satisfy the condition of peak element */
+
 /**
  * @param {number[]} arr
  * @return {number}
