@@ -35,3 +35,5 @@ function usingBinarySearch(arr, key){
 let arr = [1, 1, 2, 2, 2, 2, 3];
 let key =2;
 console.log(usingBinarySearch(arr,key));
+
+/* https://www.geeksforgeeks.org/count-number-of-occurrences-or-frequency-in-a-sorted-array/ */

@@ -1,5 +1,11 @@
 ## Binary Search
 
+Linear seach is something which takes n time for input value n .
+
+The data need not to be perfectly sorted to apply binary search.   
+Binary Search can be applied on a search space when a large space of data can be removed or
+pruned on basis of some pattern/condition. 
+
 If the problem is sorted and the question is to find or search something we should check binary search as an option. 
 
 - [Variants of binary search](https://www.geeksforgeeks.org/variants-of-binary-search/)

@@ -44,3 +44,5 @@ return [firstOccurence, lastOccurence];
 let arr = [2, 5, 5, 5, 6, 6, 8, 9, 9, 9];
 let key = 5;
 console.log(firstAndLastOccurenceOfElement(arr, key));
+
+/* https://leetcode.com/problems/find-first-and-last-position-of-element-in-sorted-array/ */

@@ -29,5 +29,5 @@ let arr1 = [2,1];
 console.log(numberOfRotations(arr1))
 
 
-  
+/* https://www.geeksforgeeks.org/find-rotation-count-rotated-sorted-array/ */
   

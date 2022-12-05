@@ -29,3 +29,5 @@ function ceilOfElem(arr, key){
   let arr = [1,2,3,4,8,10,12,19];
   let key = 5;
   console.log(ceilOfElem(arr,key));
+
+  /* https://www.geeksforgeeks.org/ceiling-in-a-sorted-array/#:~:text=Given%20a%20sorted%20array%20and,than%20or%20equal%20to%20x. */
