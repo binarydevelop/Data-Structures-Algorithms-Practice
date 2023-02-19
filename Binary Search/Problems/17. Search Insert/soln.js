@@ -16,3 +16,7 @@ while(start <= end){
 }
 return start ;
 };
+
+/* 
+If the target value is not found in the array, the binary search algorithm will eventually terminate with start being the index of the first element that is greater than the target value. This index represents the correct position to insert the target value in the array while maintaining its sorted order.
+*/
