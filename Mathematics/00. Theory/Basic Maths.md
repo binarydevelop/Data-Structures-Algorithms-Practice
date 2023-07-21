@@ -113,12 +113,13 @@ For example, consider the numbers 2, 3, 4 (2 x 2), 5, 6 (2 x 3). The LCM of thes
 
 HCF : The term HCF stands for Highest Common Factor. The largest number that divides two or more numbers is the highest common factor (HCF) for those numbers. For example, consider the numbers 30 (2 x 3 x 5), 36 (2 x 2 x 3 x 3), 42 (2 x 3 x 7), 45 (3 x 3 x 5). 3 is the largest number that divides each of these numbers, and hence, is the HCF for these numbers.
 
-HCF is also known as Greatest Common Divisor (GCD).
+HCF is also known as Greatest Common Divisor (GCD). Largest number which divides two or more numbers. 
 To find the HCF of two or more numbers, express each number as its prime factors. The product of the minimum powers of common prime terms in both of the prime factorization gives the HCF. This is the method we illustrated in the above step.
 
 Also, for finding the HCF of two numbers, we can proceed by the long division method. We divide the larger number by the smaller number (divisor). Now, we divide the divisor by the remainder obtained in the previous stage. We repeat the same procedure until we get zero as the remainder. At that stage, the last divisor would be the required HCF.
 
 For example, HCF of 30 and 42:
+![](../00.%20Theory/assets/HCF-1.png)
 
 ## Basic Euclidean Algorithm for HCF
 
@@ -143,3 +144,44 @@ HCF of co-primes = 1.
 For two fractions,
 HCF = HCF (Numerators) / LCM (Denominators)
 LCM = LCM (Numerators) / HCF (Denominators)
+
+## Permutations and Combinations
+   (Arrangements)   (Selections)
+
+Permutation: Let's say you have three different toys a ball, a car, and a doll. If you wanted to play with all three toys one after another you could put them in different orders.
+
+For example: You could play with the ball first then the car and then the doll or you could play with doll first then car and then the ball. 
+
+There are actually six different ways in which we can order these toys!
+
+In this case the order of the toys matters. we're dealing with permutations. 
+
+Permutation is the different arrangements of a given number of elements taken one by one, or some, or all at a time. For example, if we have two elements A and B, then there are two possible arrangements, AB and BA.
+
+Number of permutations when 'r' elements are arranged out of a total of 'n' elements is n Pr = n! / (n - r)!. For example, let n = 4 (A, B, C and D) and r = 2 (All permutations of size 2). The answer is 4!/(4-2)! = 12. The twelve permutations are AB, AC, AD, BA, BC, BD, CA, CB, CD, DA, DB and DC.
+
+Permutation with repetition allowed  = N^N;
+{1,2} == {{1,1}, {1,2}, {2,1}, {2,2}}
+
+Permutation with duplicates: The number of permutations or arrangements of N objects of which p1 are of one kind, p2 are of second kind, ..., pk are of k-th kind and the rest if any, are of different kinds is: N! / (p1! * p2! *....*pk!).
+
+### Combinations
+Now lets say you have five different color blocks: red, blue, green, yellow and purple.
+
+If you wanted to build a tower with three of these blocks you could pick any three blocks you wanted. 
+You could pick the red, green and yellow blocks or you could pick yellow, green and purple. 
+
+In this case the order in which you pick the blocks does not matter. If you pick the red, blues and green block it's the same as if you had picked the green blue and red blocks. 
+
+- Basic Combinatorics rule: 
+Suppose there are two sets A and B: 
+1. The rule of product
+2. The rule of sum
+
+1. If there are x number of ways to choose one element from A and Y number of ways to choose one element from B, then there will be x*y number of ways to choose two elements, one from A and one from B. 
+
+2. The rule of sum: If there are x number of ways to choose one element from A and Y number of ways to choose one element from B, then there will be x + y number of ways to choose one element that can belong to either A or to B.
+
+Combination is the different selections of a given number of elements taken one by one, or some, or all at a time. For example, if we have two elements A and B, then there is only one way to select two items, we select both of them.
+
+Number of combinations when 'r' elements are selected out of a total of 'n' elements is n C r = n! / [ (r !) * (n - r)! ]. For example, let n = 4 (A, B, C and D) and r = 2 (All combinations of size 2). The answer is 4!/((4-2)!*2!) = 6. The six combinations are AB, AC, AD, BC, BD, CD.
