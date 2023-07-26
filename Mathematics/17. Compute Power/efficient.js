@@ -17,4 +17,13 @@ function computePower(base, exponent) {
   const exponent = 3;
   const power = computePower(base, exponent);
   console.log(`${base}^${exponent} = ${power}`);
+
+
+  /* 
+  
+   start by checking whether the exponent is even or odd:
+
+If the exponent is even, we compute the power by recursively calculating the power of (base, exponent / 2) and then squaring that result.
+If the exponent is odd, we compute the power by recursively calculating the power of (base, floor(exponent / 2)) and then multiply that result with the base.
+  */
   
