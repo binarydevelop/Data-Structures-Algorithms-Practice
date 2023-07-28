@@ -1,0 +1,1 @@
+The solution provided solves problem in O(n logn) time, a more accurate solution would be to use stirlings formula. 
