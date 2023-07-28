@@ -1,7 +1,7 @@
 # Divide and Conquer
 
 - It is an important algorithm design technique based on recursion. 
-- D & C Algorithm works by recursively breaking down a problem into two or more subproblems of same type until they become simple   to be solved directly.   
+- D & C Algorithm works by recursively breaking down a problem into two or more subproblems of same type until they become simple to be solved directly.   
     The solutions of the subproblems are then combined to give the solution to the original problem. 
 
     ## Strategy
@@ -10,7 +10,6 @@
     3. **Conquer** : Appropriately combining their answers.  
 
 
-      
 - _It cannot be used for every problem_   
 As per the definition of D&C the recursion solves the subproblems which are of same type. For all problems it is not possible to find subproblems which are of same type and same size hence D&C cannot be used for every problem. 
 
