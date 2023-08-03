@@ -11,6 +11,10 @@ class BitwiseMethods {
     setBit(){
         return (this.num & (1 << this.i))
     }
+
+    clearBit(){
+        return (this.num & ~(1<<this.i))
+    }
 }
 
 let bitwiseObject = new BitwiseMethods(25,3);
