@@ -12,3 +12,30 @@ function computePower(x,n){
 }
 
 console.log(computePower(2,3));
+
+
+/* 
+function binaryExponentiation(base, exponent) {
+  if (exponent < 0) {
+    return "Exponent should be a non-negative integer.";
+  }
+
+  let result = 1;
+  while (exponent > 0) {
+    if (exponent % 2 === 1) {
+      result *= base;
+    }
+    base *= base;
+    exponent = Math.floor(exponent / 2);
+  }
+  return result;
+}
+
+// Example usage:
+const base = 2;
+const exponent = 5;
+const result = binaryExponentiation(base, exponent);
+console.log(`${base}^${exponent} = ${result}`);
+
+
+*/
