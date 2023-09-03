@@ -28,6 +28,14 @@ Binary representations:
 
 Now, let's perform the XOR operation on all the numbers:
 
+// Iteration 1: result ^ 2 = 0 ^ 2 = 2
+// Iteration 2: result ^ 4 = 2 ^ 4 = 6
+// Iteration 3: result ^ 6 = 6 ^ 6 = 0
+// Iteration 4: result ^ 4 = 0 ^ 4 = 4
+// Iteration 5: result ^ 2 = 4 ^ 2 = 6
+// Iteration 6: result ^ 7 = 6 ^ 7 = 1
+// Iteration 7: result ^ 7 = 1 ^ 7 = 6
+
 ```
 4 ^ 2 ^ 4 ^ 2 ^ 6 ^ 6 ^ 7
 = (4 ^ 4) ^ (2 ^ 2) ^ (6 ^ 6) ^ 7
