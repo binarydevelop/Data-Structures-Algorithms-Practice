@@ -8,6 +8,12 @@ function twoOddOccuringElements(arr){
     }
     //find the rightmost significant bit
     let rightmost = xor & ~(xor-1);
+    // let rightmost = 1
+    // while(rightmost & xor == 0){
+    //    rightmost = rightmost << 1;
+    //
+   // }
+   // above can be also used
     console.log(rightmost);
     //divide the arr into two groups one with rmb as set and other as not set 
     for(let i = 0; i<arr.length; i++){
