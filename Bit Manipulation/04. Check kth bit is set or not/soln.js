@@ -1,6 +1,4 @@
 /* 
-Sure, let's do a dry run of the corrected code with some sample inputs to see how it works using bitwise operations.
-
 Suppose we want to check the 3rd (K = 3) bit of the number 'n', where 'n' is 12 in binary (1100 in binary).
 
 1. First, we create a mask with the Kth bit set to 1:
@@ -28,7 +26,8 @@ Suppose we want to check the 3rd (K = 3) bit of the number 'n', where 'n' is 12 
 
 So, the function `checkKthBit(12, 3)` returns `true` because the 3rd bit of 12 is set.
 
-Now, let's consider another example where we want to check the 2nd (K = 2) bit of the number 'n', where 'n' is 6 in binary (0110 in binary).
+Now, let's consider another example where we want to check the 2nd (K = 2) bit of the number 'n',
+ where 'n' is 6 in binary (0110 in binary).
 
 1. Create the mask with the 2nd bit set to 1:
    ```
