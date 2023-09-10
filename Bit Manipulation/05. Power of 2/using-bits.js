@@ -10,6 +10,12 @@ Note: With any method which involves subtraction by 1 (just as below, ‘n-1’)
 
 */
 
+/* 
+Basic idea is to use kernighams algorithim to find if the number contains only one set bit. Since being a power of two the number will have only
+one set bit and kernighams algorithm tends to unset the most signigicant bit so if it turns the number to 0 in first iteration it means it 
+is a power of 2. 
+*/
+
 // JavaScript program to efficiently
 // check for power for 2
 

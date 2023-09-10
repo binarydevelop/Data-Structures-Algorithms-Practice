@@ -14,3 +14,6 @@ function isPowerOf2(n){
   }
   
   console.log(isPowerOf2(18));
+
+
+  // Interestingly a number which is a power of 2 will have only one bit set 
