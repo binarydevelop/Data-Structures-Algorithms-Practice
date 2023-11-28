@@ -45,9 +45,9 @@ A sequence of numbers is said to be in a Geometric progression if the ratio of a
 
 ![](../00.%20Theory/assets/GP.png)
 
-- Facts about Geometric Progression :
-Initial term: In a geometric progression, the first number is called the initial term.
-Common ratio: The ratio of any two consecutive terms by taking the previous term in the denominator.
+- Facts about Geometric Progression :  
+    - Initial term: In a geometric progression, the first number is called the initial term.  
+    - Common ratio: The ratio of any two consecutive terms by taking the previous term in the denominator.  
 The behaviour of a geometric sequence depends on the value of the common ratio. If the common ratio is:
 Positive, the terms will all be of the same sign as the initial term.
 Negative, the terms will alternate between positive and negative.
@@ -128,6 +128,7 @@ If we subtract the smaller number from larger (we reduce larger number), GCD doe
 Now instead of subtraction, if we divide the smaller number, the algorithm stops when the remainder is found to be 0.
 
 Below is the recursive function for finding GCD using Euclidean Algorithm:
+```
 gcd(a, b)
 {
     if (a == 0)
@@ -135,6 +136,7 @@ gcd(a, b)
 
     return gcd(b % a, a);
 }
+```
 
 Time Complexity: O(log(min(a, b)))
 
