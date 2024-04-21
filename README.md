@@ -6,7 +6,7 @@ Array
   [Leetcode_Array_Problems](https://leetcode.com/tag/Array/)
 
 
-## Algorithms & Techniques
+## Algorithms & Techniques 
 
 Binary Search  
   [Leetcode_Binary_Search_Problems](https://leetcode.com/tag/binary-search/)
