@@ -1,6 +1,7 @@
-function count(n){
-    if(n==0) return 0;
-
-    n= Math.floor(n/10);
-    return 1 + count(n);
+function solution(n){
+    if (parseInt(n / 10) === 0)
+        return 1;
+    return 1 + solution(parseInt(n / 10));
 }
+
+console.log(solution(0));
