@@ -1,12 +1,22 @@
-function reverseAStack(stack){
-    if(stack.length <= 1) return stack;
-    
-    let temp = stack.shift();
-    let reversed = reverseAStack(stack);
-    let reversedStack = [...reversed];
-    reversedStack.push(temp);
-    return reversedStack;
-  }
-  
-  let stack = [3,2,1,7,6];
-  console.log(reverseAStack(stack));
+function reverse(stack){
+  if(stack.length == 1) return stack;
+  let elem = stack.pop();
+  reverse(stack, elem);
+  insert(stack, elem);
+}
+
+function insert(stack, elem){
+    if(stack.length == 0) {
+      stack.push(elem);
+      return;
+    };
+    let top = stack.pop();
+    insert(stack, elem);
+    stack.push(top);
+}
+
+
+let stack = [ 3,2,1,7, 6];
+reverse(stack);
+
+console.log(stack);
