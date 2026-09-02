@@ -17,3 +17,4 @@ let k = 5
 console.log(soln(nums))
 
 
+// The idea is you choose an element then find the first lowest number than that and swap it with the current. 
